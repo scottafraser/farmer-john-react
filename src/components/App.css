@@ -2,10 +2,20 @@
   text-align: center;
 }
 
-.Applogo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.veggieList ul{
+  flex-direction: column;
+  width: 30%;
+  list-style-type: none;
+
 }
+
+.bigDiv {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
 
 .Appheader {
   background-color: #222;

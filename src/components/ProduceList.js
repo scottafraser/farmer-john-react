@@ -1,5 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 import ProduceMonth from './ProduceMonth';
+import styles from "./App.css"
 
 const availableProduce = [  
     {  
@@ -272,13 +273,12 @@ const availableProduce = [
 
 const ProduceList = () => {
   return (
-  <div>
-    <div>
+    <div className={styles.bigDiv}>
     {availableProduce.map((item, index) =>
           <ProduceMonth { ...item} key={index}/>
         )}
     </div>
-  </div>);
+    );
 };
 
 export default ProduceList;

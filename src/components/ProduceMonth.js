@@ -1,15 +1,16 @@
 import React from "react";
 import PropTypes from "prop-types";
+import styles from "./App.css"
 
 function ProduceMonth(props){
   return (
-      <div>
+      <div className={styles.veggieList}>
         <h3>{props.month}</h3>
-        <div>
+        <ul>
         {props.selection.map((item, index) =>
-           <h5 key={index}>{item}</h5>
+            <li key={index}>{item}</li>       
             )}
-        </div>
+            </ul>
       </div>
   );
 }

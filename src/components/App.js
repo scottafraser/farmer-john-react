@@ -8,18 +8,12 @@ class App extends Component {
     return (
       <div className={styles.App}>
         <header className={styles.Appheader}>
-          <h1 className={styles.Apptitle}>Welcome to React</h1>
+          <h1 className={styles.Apptitle}>WE GROW STUFF!!!!!</h1>
         </header>
-        <div className={styles.schedule}>
  
         <MarketSchedule />
-        </div>
-        <div className={styles.schedule}>
+      
         <ProduceList />
-        </div>
-        <p className={styles.Appintro}>
-
-        </p>
       </div>
     );
   }
